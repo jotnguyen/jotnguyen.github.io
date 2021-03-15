@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <script src="./d3v6.js"></script>
+      <script src="./html5slider.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="styles.css">
+
+      <link href="nouislider.css" rel="stylesheet">
+      <script src="nouislider.js"></script>
+    </head>
+
+    <body>
+      <div class="left-half">
+        <div>This is a slider for the years from 2009 - 2018. Press play to go through each consecutive year.</div>
+        <input id="slider" type="range" min="2009" max="2018" value="2009" step="1" />
+        <span id="range">2009</span>
+      
+        <button name="play" id="play">Play</button>
+  
+        <br>
+        <br>
+        <br>
+        <br>
+  
+        <select id="states" name="select_states" onChange="selectStates(this);">
+  
+          <option value="All" selected="selected">All States</option>
+          
+          <option value="OK">Oklahoma</option>
+          
+          <option value="TX">Texas</option>
+          
+          <option value="AR">Arkansas</option>
+          
+          <option value="MS">Mississippi</option>
+          
+          <option value="FL">Florida</option>
+          
+          </select>
+  
+        <br>
+        <br>
+        <br>
+  
+        <div>This is a slider for the percentage of undergraduate students who receive financial aid</div>
+        <br>
+        <br>
+  
+        <div id="nuslider"></div>
+        <br>
+        <!-- <div>Percentage Values:</div> -->
+        <!-- <div id="slider-step-value"></div> -->
+        <br>
+        <br>
+        <br>
+      </div>
+        
+      <div class="right-half">
+        <div id="chart"></div>
+      </div>
+
+
+
+      
+
+      <script src="myScript.js"></script>
+    </body>
+
+
+</html>
